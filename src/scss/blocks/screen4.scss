@@ -1,0 +1,57 @@
+.screen4 {
+   &__card {
+      width: 260px;
+      height: 200px;
+      min-height: 200px;
+      max-height: 200px;
+      min-width: 260px;
+   }
+   &__footer {
+      padding-top: 16px;
+      height: 200px;
+   }
+   &__footer-content {
+      width: 90%;
+   }
+   &__footer-link {
+      width: 200px;
+      display: block;
+      font-weight: 600;
+      text-decoration: none;
+      line-height: 24px;
+      color: #1B1C21;
+      position: relative;
+   }
+   &__footer-link::after {
+      content: "";
+      width: 9px;
+      height: 9px;
+      position: absolute;
+      bottom: 7px;
+      right: 70px;
+      transform: rotate(45deg);
+      border-radius: 1px;
+      box-shadow: inset -2.5px 2.5px 0 0 #FF3E79;
+   }
+}
+@media (min-width:768px) {
+   .screen4 {
+      &__footer {
+         height: 148px;
+      }
+      &__footer-link {
+         width: 320px;
+      }
+      &__footer-link::after {
+         right: 0;
+      }
+      &__card {
+         height: 64px;
+         min-height: 64px;
+         max-height: 64px;
+      }
+   }
+}
+@media (min-width:1120px) {
+   
+}

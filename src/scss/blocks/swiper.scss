@@ -1,0 +1,17 @@
+.swiper-pagination-bullet {
+   background-color: #7E7E82;
+   display: inline-block;
+   width: 12px;
+   height: 12px;
+}
+.swiper-slide {
+   padding: 0 16px;
+}
+@media (min-width:768px) {
+   .swiper-container {
+      display: none;
+   }
+   .swiper-pagination.logos__bullets {
+      display: none;
+   }
+}

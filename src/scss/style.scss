@@ -1,17 +1,46 @@
-$bgColor: #24292e;
-$text: #fff;
+@import '../fonts/stylesheet.css';
+@import './less/normalize.scss';
+@import './less/variables.scss';
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+@import './blocks/read-more.scss';
+@import './blocks/title.scss';
+@import './blocks/icon.scss';
+@import './blocks/header.scss';
+@import './blocks/subheader.scss';
+@import './blocks/menu.scss';
+@import './blocks/screen1.scss';
+@import './blocks/response.scss';
+@import './blocks/contacts.scss';
+@import './blocks/languages.scss';
+@import './blocks/item.scss';
+
+@import './blocks/screen2.scss';
+@import './blocks/main-logo-container.scss';
+@import './blocks/header2.scss';
+@import './blocks/swiper.scss';
+@import './blocks/logos-swiper.scss';
+@import './blocks/logos.scss';
+
+@import './blocks/screen3.scss';
+@import './blocks/screen4.scss';
+@import './blocks/table.scss';
+@import './blocks/footer.scss';
+@import './blocks/feedback.scss';
+@import './blocks/input.scss';
+@import './blocks/concern.scss';
+* {
+  box-sizing: inherit;
 }
-
+*:focus {
+  border-color: $text;
+}
 body {
   padding: 1rem;
   margin: 0;
-  font-family: Comic, sans-serif;
+  padding: 0;
+  font-family: 'TT Lakes', sans-serif;
   background-color: $bgColor;
   color: $text;
+  box-sizing: border-box;
 }
+

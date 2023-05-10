@@ -1,0 +1,36 @@
+.screen2 {
+   &__read-more {
+      display: none;
+   }
+}
+
+
+@media (min-width:768px) {
+   .screen2 {
+      &__read-more {
+         font-size: 16px;
+         display: flex;
+         width: 150px;
+         height: 24px;
+         margin: 16px 0 16px 16px;
+         align-items: center;
+         font-weight: 400;
+         background: none;
+         transition: 1s ease-out max-height;
+      }
+      &__read-more::before {
+         content: url("../img/expand.svg");
+         width: 24px;
+         height: 24px;
+         margin-right: 8px;
+         transform: rotate(0);
+         transition: 0.3s ease-out transform;
+      }
+   }
+}
+
+@media (min-width:1120px) {
+   .screen2 {
+      width: calc(100vw - 320px);
+   }
+}

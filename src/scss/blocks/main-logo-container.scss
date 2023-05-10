@@ -1,0 +1,13 @@
+.main-logo-container {
+   padding: 24px 16px 24px 16px;
+   background-color: #F8F8F8;
+   position: relative;
+   width: 100vw;
+   overflow: hidden;
+}
+@media (min-width:768px) {
+   .main-logo-container {
+      width: auto;
+      height: auto;
+   }
+}

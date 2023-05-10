@@ -1,0 +1,15 @@
+.response {
+   display: flex;
+   width: 152px;
+   height: 40px;
+   justify-content: space-between;
+   &__call {
+      display: block;
+   }
+   &__message {
+      display: block;
+   }
+   &__contact {
+      display: block;
+   }
+}

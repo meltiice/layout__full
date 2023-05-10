@@ -1,0 +1,19 @@
+.languages {
+   display: flex;
+   width: 87px;
+   justify-content: space-between;
+   padding-bottom: 24px;
+   font-weight: 500;
+   &__radio {
+      display: none;
+   }
+   &__radio:checked + span{
+      color: #7E7E82;
+   }
+   &--active {
+      color: #7E7E82;
+   }
+   &__ch, &__en, &__ru {
+      cursor: pointer;
+   }
+}

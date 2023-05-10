@@ -1,0 +1,9 @@
+.header2 {
+   padding: 16px;
+   background-color: white;
+   &__subtitle {
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0;
+   }
+}

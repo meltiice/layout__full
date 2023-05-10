@@ -1,0 +1,103 @@
+
+.header {
+   background-color: #FFFFFF;
+   width: 100vw;
+   padding: 16px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__burger {
+      display: block;
+      background-image: url(../img/burger.png);
+      margin-right: 16px;
+   }
+   &__logo {
+      min-width: 96.55px;
+      min-height: 50.81px;
+      height: 50px;
+      background-image: url(../img/logo.svg);
+   }
+   &__container-1 {
+      display: none;
+   }
+   &__search {
+      background-image: url(../img/search.svg);
+   }
+   &__call {
+      background-image: url(../img/call.png);
+   }
+   &__message {
+      background-image: url(../img/chat.png);
+   }
+   &__contact {
+      background-image: url(../img/profile.png);
+   }
+   &__container-2 {
+      display: flex;
+      margin-left: auto;
+      width: 96px;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__request {
+      display: block;
+      background-image: url(../img/checkstatus.png);
+   }
+   &__repair::before {
+      content: "";
+      display: block;
+      background-color: #EAEAEA;
+      width: 2px;
+      height: 32px;
+      transform: translateX(-20px);
+   }
+   &__repair {
+      display: block;
+      background-image: url(../img/repair.png);
+   }
+
+}
+@media (min-width:768px) {
+   .header {
+      padding: 16px 24px;
+      &__burger{
+         margin-right: 20px;
+      }
+      &__burger::after {
+         content: "";
+         background-color: #EAEAEA;
+         display: block;
+         width: 2px;
+         height: 32px;
+         transform: translateX(55px);
+      }
+      &__logo {
+         margin-left: 20px;
+      }
+      &__container-1 {
+         display: flex;
+         margin-left: auto;
+         margin-right: 4px;
+         width: 172px;
+         height: 40px;
+         padding-right: 22px;
+         justify-content: space-between;
+      }
+      &__container-2 {
+         margin-left: 0;
+      }
+      &__call, &__message, &__contact {
+         display: block;
+      }
+      &__repair::before {
+         transform: translate(-20px);
+      }
+
+   }
+}
+@media (min-width: 1120px) {
+   .header {
+      display: none;
+   }
+}

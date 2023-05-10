@@ -1,0 +1,86 @@
+/*! HEADER*/
+.header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  display: none;
+  min-width: 40px;
+  min-height: 40px;
+  background-repeat: no-repeat;
+  border-style: none;
+  cursor: pointer;
+}
+
+.header__burger {
+  display: block;
+  margin-left: 16px;
+  background: url(../img/burger.svg);
+  margin-right: 16px;
+}
+
+.header__search {
+  background-image: url(../img/search.svg);
+}
+
+.header__call {
+  background-image: url(../img/call.svg);
+}
+
+.header__message {
+  background-image: url(../img/chat.svg);
+}
+
+.header__contact {
+  background-image: url(../img/profile.svg);
+}
+
+.header__container-1 {
+  display: none;
+}
+
+.header__container-2 {
+  display: flex;
+  margin-left: auto;
+  width: 134px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.header__request {
+  display: block;
+  margin-right: 16px;
+  background-image: url(../img/checkstatus.svg);
+}
+
+.header__request::before {
+  content: "";
+  display: block;
+  background-color: #EAEAEA;
+  width: 2px;
+  height: 32px;
+  transform: translateX(-20px);
+}
+
+.header__repair {
+  display: block;
+  background-image: url(../img/repair.svg);
+}
+
+.header__logo {
+  min-width: 96.55px;
+  min-height: 50.81px;
+  height: 50px;
+  background-image: url(../img/logo.svg);
+}
+
+.title__button-text {
+  display: none;
+  font-size: 16px;
+}

@@ -1,0 +1,10 @@
+.item {
+   &__link {
+   text-decoration: none;
+   color: $text;
+   letter-spacing: -0.2px;
+   }
+   &__link:hover {
+      color: $subText;
+   }
+}

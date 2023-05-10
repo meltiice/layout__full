@@ -1,0 +1,35 @@
+.read-more {
+   font-size: 14px;
+   display: flex;
+   height: 24px;
+   margin: 16px 0 16px 16px;
+   align-items: center;
+   font-weight: 500;
+   background: none;
+   &::before {
+      content: url("../img/expand.svg");
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+   }
+}
+// Не работает! починить
+@media (min-width:768px) {
+.open-content--show {
+   max-height: 340px;
+}
+.read-more-rotate::before {
+   transform: rotate(180deg);
+}
+}
+@media (min-width:1120px) {
+   .open-content--show {
+      max-height: 340px;
+   }
+   .read-more {
+      transition-duration: 0.8s;
+   }
+   .read-more-rotate::before {
+      transition-duration: 0.3s;
+   }
+}

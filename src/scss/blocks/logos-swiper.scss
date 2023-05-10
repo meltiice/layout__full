@@ -1,0 +1,25 @@
+.logos-swiper {
+   width: 100%;
+   &::after {
+      content: "";
+      width: 24px;
+      height: 74px;
+      background: linear-gradient(to right, transparent, #F8F8F8);
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 24px;
+   }
+}
+@media (min-width:768px) {
+   .logos-swiper::after {
+      display: none;
+   }
+   .logos-swiper--not-mobile {
+      display: block;
+      width: 100%;
+   }
+}
+@media (min-width:1120px) {
+   
+}

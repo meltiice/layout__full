@@ -1,0 +1,34 @@
+.footer {
+   font-size: 14px;
+   line-height: 16px;
+   color: #7E7E82;
+   display: block;
+   &__dev, &__policy, &__info {
+      text-align: center;
+   }
+   &__container {
+      height: 178px;
+   }
+   
+}
+@media (min-width:768px) {
+   .footer {
+      &__container {
+         width: 100%;
+         height: 130px;
+         display: flex;
+      }
+      &__dev, &__policy, &__info {
+         width: 33.33%;
+      }
+      &__dev, &__policy {
+         text-align: left;
+      }
+      &__policy {
+         padding-left: 3%;
+      }
+      &__info {
+         text-align: right;
+      }
+   }
+}

@@ -2,17 +2,34 @@
 
 /* Document
    ========================================================================== */
-
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ /*personal*/
+* {
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.screen1__scroll::-moz-scrollbar
+{
+width: 0px;
+height: 0px;
+}
+html {
+  -ms-overflow-style: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
  html {
    line-height: 1.15; /* 1 */
    -webkit-text-size-adjust: 100%; /* 2 */
+   box-sizing: border-box;
  }
- 
+ /*personal end*/
  /* Sections
     ========================================================================== */
  
@@ -166,6 +183,7 @@
    font-size: 100%; /* 1 */
    line-height: 1.15; /* 1 */
    margin: 0; /* 2 */
+   border-style: none;
  }
  
  /**
@@ -246,7 +264,9 @@
    padding: 0; /* 3 */
    white-space: normal; /* 1 */
  }
- 
+ #header {
+  color: tomato;
+ }
  /**
   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
   */
