@@ -27,13 +27,13 @@ const swiper = new Swiper('.swiper-container', {
    width: 256
 });
 console.log('Works4!');
-/*
+
 console.log(window.innerWidth); 
 if(window.innerWidth <= 768) {
    swiper.enable();
 }
 else {
-   swiper.destroy(false, false);
+   swiper.disable();
 }
 console.log("Swiper done");
-*/
+
