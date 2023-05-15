@@ -10,102 +10,109 @@
   <link href="style.css" rel="stylesheet"></head>
   <body>
    <div class="site">
-      <div class="menu">
-         <header class="menu__header">
-            <button class="menu__burger icon"><img class="icon__img" src="./img/burger-close.png" alt="Закрыть меню"></button>
-            <div class="menu__logo"><img src="./img/logo.svg" alt="Логотип компании CPS" class="logo"></div>
-            <button class="menu__search icon"><img class="icon__img" src="./img/search.png" alt="Поиск по сайту"></button>
-         </header>
-         <main class="menu__content">
-            <ul class="menu__list">
-               <li class="menu__item item"><a class="item__link" href="#">Ремонт техники</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Услуги и сервисы</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Корпоротивным клиентам</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Продавцам техники</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Партнерам</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Производителям</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Наши сервисные центры</a></li>
-               <li class="menu__item item"><a class="item__link" href="#">Контакты</a></li>
-            </ul>
-         </main>
-         <div class="menu__footer">
-            <div class="response">
-               <button class="response__call icon"><img class="icon__img" src="./img/call.png" alt="Звонок"></button>
-               <button class="response__message icon"><img class="icon__img" src="./img/chat.png" alt="Сообщения с консультантом"></button>
-               <button class="response__contact icon"><img class="icon__img" src="./img/profile.png" alt="Личный профиль"></button>
+      <div class="menu" id="menu">
+         <div class="menu__container" id="menu-container">
+            <div class="menu__header">
+               <button class="menu__burger icon" id="burger-close"><img class="icon__img" src="./img/burger-close.png" alt="Закрыть меню"></button>
+               <div class="menu__logo"><img src="./img/logo.svg" alt="Логотип компании CPS" class="logo"></div>
+               <button class="menu__search icon"><img class="icon__img" src="./img/search.png" alt="Поиск по сайту"></button>
             </div>
-            <div class="contacts">
-               <div class="contacts__email"><a class="contacts__email-link" href="#">mail@cps.com</a></div>
-               <div class="contacts__phone"><a class="contacts__phone-link" href="#">8 800 890 8900</a></div>
+            <div class="menu__content">
+               <ul class="menu__list">
+                  <li class="menu__item item"><a class="item__link" href="#">Ремонт техники</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Услуги и сервисы</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Корпоротивным клиентам</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Продавцам техники</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Партнерам</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Производителям</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Наши сервисные центры</a></li>
+                  <li class="menu__item item"><a class="item__link" href="#">Контакты</a></li>
+               </ul>
             </div>
-            <div class="languages">
-               <label><input checked="checked" type="radio" name="lang" class="languages__radio"><span class="languages__ru">RU</span></label>
-               <label><input type="radio" name="lang" class="languages__radio"><span class="languages__en">EN</span></label>
-               <label><input type="radio" name="lang" class="languages__radio"><span class="languages__ch">CH</span></label>
+            <div class="menu__footer">
+               <div class="response">
+                  <button class="response__call icon" id="button-call"><img class="icon__img" src="./img/call.png" alt="Звонок"></button>
+                  <button class="response__message icon" id="button-request"><img class="icon__img" src="./img/chat.png" alt="Сообщения с консультантом"></button>
+                  <button class="response__contact icon"><img class="icon__img" src="./img/profile.png" alt="Личный профиль"></button>
+               </div>
+               <div class="contacts">
+                  <div class="contacts__email"><a class="contacts__email-link" href="mailto:mail@cps.com">mail@cps.com</a></div>
+                  <div class="contacts__phone"><a class="contacts__phone-link" href="tel:+78008908900">8 800 890 8900</a></div>
+               </div>
+               <div class="languages">
+                  <label><input checked="checked" type="radio" name="lang" class="languages__radio"><span class="languages__ru">RU</span></label>
+                  <label><input type="radio" name="lang" class="languages__radio"><span class="languages__en">EN</span></label>
+                  <label><input type="radio" name="lang" class="languages__radio"><span class="languages__ch">CH</span></label>
+               </div>
             </div>
          </div>
       </div>
-      <div class="feedback">
-         <div class="feedback__shadow"></div>
-         <div class="feedback__content">
-            <button class="feedback__icon icon"><img class="icon__img" src="./img/burger-close.png"></button>
-            <h2 class="feedback__title title">Обратная связь</h2>
-            <form>
-            <input type="text" class="feedback__input input" placeholder="Имя">
-            <input type="tel" class="feedback__input input" placeholder="Телефон">
-            <input type="email" class="feedback__input input" placeholder="Электронная почта">
-            <input type="text" class="feedback__input input input--textarea" placeholder="Сообщение">
-            <p class="concern">Нажимая “отправить”, вы даете согласие на <span class="concern__important">обработку персональных данных</span> и соглашаетесь с нашей <span class="concern__important">политикой конфиденциальности</span></p>
-            <button type="submit" class="feedback__button table__button">Отправить</button>
-            </form>
+      <div class="feedback" id="feedback-request">
+         
+            <div class="feedback__content" id="feedback-request-container">
+               <button class="feedback__icon icon" id="request-close-button"><img class="icon__img" src="./img/burger-close.png"></button>
+               <h2 class="feedback__title title">Обратная связь</h2>
+               <form>
+               <input type="text" class="feedback__input input" placeholder="Имя" required pattern2="[а-яА-Я]+">
+               <input type="teче" name="phone1" class="feedback__input input" placeholder="Телефон" required id="phone1">
+               <input type="text" class="feedback__input input" placeholder="Электронная почта" required id="email">
+               <textarea class="feedback__input input input--textarea" placeholder="Сообщение"></textarea>
+               <p class="concern">Нажимая “отправить”, вы даете согласие на <span class="concern__important">обработку персональных данных</span> и соглашаетесь с нашей <span class="concern__important">политикой конфиденциальности</span></p>
+               <button type="submit" class="feedback__button submit">Отправить</button>
+               </form>
             </div>
+         
       </div>
-      <div class="feedback feedback--call">
-         <div class="feedback__shadow"></div>
-         <div class="feedback__content">
-            <button class="feedback__icon icon"><img class="icon__img" src="./img/burger-close.png"></button>
+      <div class="feedback feedback--call" id="feedback-call">
+         <div class="feedback__content" id="feedback-call-container">
+            <button class="feedback__icon icon" id="call-close-button"><img class="icon__img" src="./img/burger-close.png"></button>
             <h2 class="feedback__title title">Заказать звонок</h2>
             <form>
-            <input type="tel" class="feedback__input input" placeholder="Телефон">
+            <input type="text" name="phone" class="feedback__input input" placeholder="Телефон" required id="phone2">
             <p class="concern">Нажимая “отправить”, вы даете согласие на <span class="concern__important">обработку персональных данных</span> и соглашаетесь с нашей <span class="concern__important">политикой конфиденциальности</span></p>
-            <button type="submit" class="feedback__button table__button">Отправить</button>
+            <button type="submit" class="feedback__button submit">Отправить</button>
             </form>
          </div>
       </div>
-      <div class="test"></div>
-      <div class="sitte">
-         <header class="header">
-            <button type="button" class="header__burger icon"></button>
+      <main class="main">
+         <div class="header">
+            <button type="button" class="header__burger icon" id="burger"></button>
             <button type="button" class="header__search icon"></button>
             <img class="header__logo" src="img/logo.svg" alt="Логотип компании CPS">
             <div class="header__container-1">
-            <button type="button" class="header__call icon"></button>
-            <button type="button" class="header__message icon"></button>
+            <button type="button" class="header__call icon" id="header__call"></button>
+            <button type="button" class="header__message icon" id="header__message"></button>
             <button type="button" class="header__contact icon"></button>
             </div>
             <div class="header__container-2">
             <button type="button" class="header__repair icon"></button>
             <button type="button" class="header__request icon"></button>
             </div>
-         </header>
-         <main>
+         </div>
+         <div>
          <section class="screen1">
             <div class="screen1__title-container">
                <h1 class="screen1__title title">Услуги и сервисы</h1>
-               <span class="title__button-text">Оставить заявку</span>
-               <span class="title__button-text title__button-text--repair">Статус ремонта</span>
+               <label class="title__button">
+                  <span class="title__button-text">Оставить заявку</span>
+                  <button class="title__icon icon"><img class="icon__img" src="./img/checkstatus.png"></button>
+               </label>
+               <label class="title__button">
+                  <span class="title__button-text">Статус ремонта</span>
+                  <button class="title__icon icon"><img class="icon__img" src="./img/repair.png"></button>
+               </label>
             </div>
                <ul class="screen1__scroll">
-                  <li class="screen1__subheader-container screen1__subheader-container-active"><h2 class="screen1__subheader subheader">Ремонтируемые бренды</h2></li>
-                  <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Ремонтируемые устройства</h2></li>
-                  <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Цены на услуги</h2></li>
-                  <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Адреса сервисных центров</h2></li>
-                  <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Специальные цены</h2></li>
-                  <li class="screen1__subheader-container"><h2 class="screen1__subheader subheader">Отзывы</h2></li>
+                  <li class="screen1__subheader-container screen1__subheader-container-active"><a class="screen1__subheader subheader" href="#screen2">Ремонтируемые бренды</a></li>
+                  <li class="screen1__subheader-container"><a class="screen1__subheader subheader" href="#screen3">Ремонтируемые устройства</a></li>
+                  <li class="screen1__subheader-container"><a class="screen1__subheader subheader" href="#screen4">Цены на услуги</a></li>
+                  <li class="screen1__subheader-container"><a class="screen1__subheader subheader" href="#">Адреса сервисных центров</a></li>
+                  <li class="screen1__subheader-container"><a class="screen1__subheader subheader" href="#">Специальные цены</a></li>
+                  <li class="screen1__subheader-container"><a class="screen1__subheader subheader" href="#">Отзывы</a></li>
                </ul>
             <div class="screen1__article">
                <div class="screen1__paragraf-container">
-                  <p class="screen1__paragraf">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                  <p class="screen1__paragraf" id="paragraf1">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
                      Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                   
@@ -113,18 +120,18 @@
 
          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                   </p>
-                  <button class="screen1__read-more read-more">Читать далее</button>
+                  <button class="read-more screen1__read-more" id="readmore-screen1">Читать далее</button>
                </div>
                <img class="screen1__logo-photo" src="./img/logophoto.svg" alt="Фото логотипа компании">
             </div>
          </section>
-         <section class="screen2">
+         <section class="screen2" id="screen2">
             <div class="header2">
                <h2 class="header2__subtitle subheader">Ремонт техники различных брендов</h2>
             </div>
-            <div class="main-logo-container">
-               <div class="swiper-container logos-swiper logos-swiper--not-mobile">
-                  <div class="logos swiper-wrapper" id="logos">
+            <div class="main-logo-container screen2__container">
+               <div class="swiper-container logos-swiper logos-swiper--not-mobile screen2__swiper">
+                  <div class="logos swiper-wrapper screen2__logos" id="logos2">
                      <div class="logos__logo swiper-slide">
                         <img class="logos__brand" src="./img/lenovo.png" alt="Lenovo">
                         <div class="logos__icon icon"></div>
@@ -172,16 +179,16 @@
                   </div>
                   <div class="swiper-pagination logos__bullets"></div>
                </div>
-               <button type="button" class="screen2__read-more read-more" id="readmore">Показать всё</button>
+               <button type="button" class="read-more" id="readmore-screen2">Показать всё</button>
             </div>
          </section>
-         <section class="screen3">
+         <section class="screen3" id="screen3">
             <div class="header2">
                <h2 class="header2__subtitle subheader">Ремонт различных видов техники</h2>
             </div>
             <div class="main-logo-container screen3__main-logo-container">
                   <div class="swiper-container logos-swiper logos-swiper--not-mobile screen3__logos-swiper">
-                     <div class="logos swiper-wrapper screen3__logos">
+                     <div class="logos swiper-wrapper screen3__logos" id="logos3">
                         <div class="logos__logo swiper-slide screen3__logo">
                            <span class="logos__text">Ремонт ноутбуков</span>
                            <div class="logos__icon icon screen3__icon"></div>
@@ -229,10 +236,10 @@
                      </div>
                      <div class="swiper-pagination logos__bullets"></div>
                   </div>
-                  <button type="button" class="screen2__read-more read-more" id="readmore">Показать всё</button>
+                  <button type="button" class="read-more" id="readmore-screen3">Показать всё</button>
             </div>
          </section>
-         <section class="screen4">
+         <section class="screen4" id="screen4">
             <div class="header2">
                <h2 class="header2__subtitle subheader">Цены на услуги</h2>
             </div>
@@ -259,7 +266,7 @@
                            <div class="table__content">30 мин</div>
                         </div>
                         <div class="table__column4">
-                           <button class="table__button">Заказать</button>
+                           <button class="submit">Заказать</button>
                         </div>
                      </div>
                      <div class="table__row logos__logo swiper-slide screen4__card">
@@ -276,7 +283,7 @@
                            <div class="table__content">30 - 120 мин</div>
                         </div>
                         <div class="table__column4">
-                           <button class="table__button">Заказать</button>
+                           <button class="submit">Заказать</button>
                         </div>
                      </div>
                      <div class="table__row logos__logo swiper-slide screen4__card">
@@ -293,7 +300,7 @@
                            <div class="table__content">30 - 120 мин</div>
                         </div>
                         <div class="table__column4">
-                           <button class="table__button">Заказать</button>
+                           <button class="submit">Заказать</button>
                         </div>
                      </div>
                      <div class="table__row logos__logo swiper-slide screen4__card">
@@ -310,7 +317,7 @@
                            <div class="table__content">30 - 120 мин</div>
                         </div>
                         <div class="table__column4">
-                           <button class="table__button">Заказать</button>
+                           <button class="submit">Заказать</button>
                         </div>
                      </div>
                      <div class="table__row table__row--last-child logos__logo swiper-slide screen4__card">
@@ -327,7 +334,7 @@
                            <div class="table__content">30 - 120 мин</div>
                         </div>
                         <div class="table__column4">
-                           <button class="table__button">Заказать</button>
+                           <button class="submit">Заказать</button>
                         </div>
                      </div>
                   </div>
@@ -341,18 +348,20 @@
                <a class="screen4__footer-link" href="#">Получить коммерческое предложение</a>
             </div>
          </section>
-         </main>
-         <footer class="footer">
+         </div>
+         <div class="footer">
             <div class="footer__container main-logo-container">
                <p class="footer__dev">© 2019 CPS<br>
                   Разработано командой Apesong </p>
                <p class="footer__policy">Политика конфиденциальности</p>
                <p class="footer__info">Информация, размещенная на данной странице, не является публичной офертой</p>
             </div>
-         </footer>
+         </div>
+      </main>
    </div>
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/imask"></script>
    <script src="./js/index.js"></script>
 
-  <script type="text/javascript" src="./js/bundle.js"></script></div></body>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
