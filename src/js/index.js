@@ -7,6 +7,14 @@ import {swiper} from './swiper';
 import {openWindow} from './openwindow';
 
 console.log('1');
+ /*const area = document.querySelector('#feedback-request') // находим кнопку для открытия/закрытия окна навигации
+ const nav = document.querySelector('#feedback-request-container') // находим окно навигации
+ window.addEventListener('click', e => { // при клике в любом месте окна браузера
+   const target = e.target // находим элемент, на котором был клик
+   if (!target.closest('#feedback-request-container') && target.closest('#feedback-request')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+     area.classList.remove('feedback--active') // то закрываем окно навигации, удаляя активный класс
+   }
+ })*/
 var element = document.querySelector("#phone1");
 var mask = new IMask(element, maskOptions);
 var element2 = document.querySelector("#email");
