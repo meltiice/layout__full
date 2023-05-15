@@ -19,8 +19,11 @@
       font-weight: 600;
       text-decoration: none;
       line-height: 24px;
-      color: #1B1C21;
+      color: $text;
       position: relative;
+      &:hover {
+         color: $subText;
+      }
    }
    &__footer-link::after {
       content: "";
@@ -31,7 +34,10 @@
       right: 70px;
       transform: rotate(45deg);
       border-radius: 1px;
-      box-shadow: inset -2.5px 2.5px 0 0 #FF3E79;
+      box-shadow: inset -2.5px 2.5px 0 0 $buttonColor;
+   }
+   &__footer-link:hover::after {
+      box-shadow: inset -2.5px 2.5px 0 0 $buttonActiveColor;
    }
 }
 @media (min-width:768px) {

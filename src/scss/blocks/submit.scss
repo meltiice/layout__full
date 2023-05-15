@@ -1,0 +1,39 @@
+.submit {
+   box-sizing: border-box;
+   padding-left: 16px;
+   width: 119px;
+   height: 32px;
+   border-radius: 16px;
+   background-color: $buttonColor;
+   color: $bgColor;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 600;
+   line-height: 24px;
+   text-align: left;
+   letter-spacing: -0.15px;
+   position: relative;
+   cursor: pointer;
+   box-shadow: 0 0 0 0px $buttonColor;
+   transition-duration: 0.3s;
+   &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: calc(50% - 4px);
+      right: 20px;
+      transform: rotate(45deg);
+      border-radius: 1px;
+      box-shadow: inset -2px 2px 0 0 $bgColor;
+   }
+   &:hover {
+      box-shadow: 0 0 0 2px $buttonColor;
+      transition-duration: 0.3s;
+
+   }
+   &:active {
+      background-color: $buttonActiveColor;
+      box-shadow: none;
+   }
+}

@@ -1,24 +1,11 @@
 .input {
-   border: 1px solid #eaeaea;
+   border: 1px solid $shadowColor;
    border-radius: 8px;
    padding: 12px;
    width: 100%;
-   color: #B5B6BC;
+   color: $inputText;
    margin-bottom: 16px;
    &--textarea {
       height: 118px;
-      vertical-align: sub;
-      &::-webkit-input-placeholder {
-         transform: translateY(-160%);
-       }
-      &:-moz-placeholder {
-         transform: translateY(-160%);
-       }
-      & :-ms-input-placeholder {
-         transform: translateY(-160%);
-       }
-      &::-moz-placeholder {
-         transform: translateY(-160%);
-       }
    }
 }

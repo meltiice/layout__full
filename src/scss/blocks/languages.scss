@@ -8,10 +8,10 @@
       display: none;
    }
    &__radio:checked + span{
-      color: #7E7E82;
+      color: $subText;
    }
    &--active {
-      color: #7E7E82;
+      color: $subText;
    }
    &__ch, &__en, &__ru {
       cursor: pointer;

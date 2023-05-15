@@ -1,7 +1,7 @@
 .footer {
    font-size: 14px;
    line-height: 16px;
-   color: #7E7E82;
+   color: $subText;
    display: block;
    &__dev, &__policy, &__info {
       text-align: center;

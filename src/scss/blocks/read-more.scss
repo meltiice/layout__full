@@ -1,6 +1,6 @@
 .read-more {
    font-size: 14px;
-   display: flex;
+   display: none;
    height: 24px;
    margin: 16px 0 16px 16px;
    align-items: center;
@@ -11,25 +11,17 @@
       width: 24px;
       height: 24px;
       margin-right: 8px;
-   }
-}
-// Не работает! починить
-@media (min-width:768px) {
-.open-content--show {
-   max-height: 340px;
-}
-.read-more-rotate::before {
-   transform: rotate(180deg);
-}
-}
-@media (min-width:1120px) {
-   .open-content--show {
-      max-height: 340px;
-   }
-   .read-more {
-      transition-duration: 0.8s;
-   }
-   .read-more-rotate::before {
+      transform: rotate(0deg);
       transition-duration: 0.3s;
+   }
+   &--rotate::before {
+      transform: rotate(180deg);
+      transition-duration: 0.3s;
+   }
+}
+@media (min-width: 768px)
+{
+   .read-more {
+      display: flex;
    }
 }

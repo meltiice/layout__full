@@ -9,18 +9,28 @@
 @media (min-width: 1120px)
 {
    .title {
+      &__button {
+         display: flex;
+         align-items: center;
+         margin-right: 20px;
+      }
       &__button-text {
          display: inline-block;
-         width: 173px;
+         width: 133px;
          height: 40px;
          text-align: left;
          line-height: 38px;
-         margin: auto 32px auto 0;
-         background: url(../img/checkstatus.svg) no-repeat 100% 100%;
+         margin: auto 10px;
       }
-      &__button-text--repair {
-         background-image: url(../img/repair.svg);
-         width: 168px;
+      &__button-text:hover {
+         color: $subText;
+      }
+      &__icon {
+         display: inline-block;
+      }
+      &__img {
+         width: 20px;
+         height: auto;
       }
    }
 }

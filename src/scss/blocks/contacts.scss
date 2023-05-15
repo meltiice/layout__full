@@ -5,11 +5,11 @@
       margin-bottom: 12px;
    }
    &__email-link, &__phone-link {
-      color: #1B1C21;
+      color: $text;
       text-decoration: none;
    }
    &__email-link:hover, &__phone-link:hover {
-      color: #7E7E82;
+      color: $subText;
    }
    &__phone {
       font-weight: 800;

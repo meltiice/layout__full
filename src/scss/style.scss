@@ -3,10 +3,11 @@
 @import './less/variables.scss';
 
 @import './blocks/read-more.scss';
-@import './blocks/title.scss';
 @import './blocks/icon.scss';
+@import './blocks/title.scss';
 @import './blocks/header.scss';
 @import './blocks/subheader.scss';
+@import './blocks/submit.scss';
 @import './blocks/menu.scss';
 @import './blocks/screen1.scss';
 @import './blocks/response.scss';
@@ -21,6 +22,7 @@
 @import './blocks/logos-swiper.scss';
 @import './blocks/logos.scss';
 
+@import './blocks/main.scss';
 @import './blocks/screen3.scss';
 @import './blocks/screen4.scss';
 @import './blocks/table.scss';
@@ -28,11 +30,9 @@
 @import './blocks/feedback.scss';
 @import './blocks/input.scss';
 @import './blocks/concern.scss';
-* {
-  box-sizing: inherit;
-}
-*:focus {
-  border-color: $text;
+
+html {
+  scroll-behavior: smooth;
 }
 body {
   padding: 1rem;

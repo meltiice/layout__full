@@ -2,8 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const { ChildProcess } = require('child_process');
 
 module.exports = {
+  /*node: {
+    fs: 'empty',
+    childprocess: 'empty'
+  },*/
   // Входной файл
   entry: [
     './src/js/index.js'
@@ -22,7 +27,7 @@ module.exports = {
       // Транспилируем js с babel
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src/js'),
+        include: path.resolve(__dirname, './src/js'),
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',

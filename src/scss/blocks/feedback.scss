@@ -1,19 +1,19 @@
 .feedback {
-   //display: none;
-   width: 100%;
-   height: 100%;
-   display: flex;
    display: none;
-   justify-content: space-between;
-   position: absolute;
+   width: 100%;
+   height: 100vh;
+   position: fixed;
    z-index: 3;
-   right: 0;
-   color: #1B1C21;
-   &--call {
-      display: none;
+   justify-content: flex-end;
+   &--active {
+      display: flex;
+      background-color: rgba(255, 255, 255, 0.7);
    }
    &__content {
-      background-color: white;
+      display: inline-block;
+      background-color: $bgColor;
+      box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+                  -16px 0px 52px rgba(14, 24, 80, 0.1);
       width: 320px;
       height: 100%;
       padding: 24px 16px;
@@ -25,8 +25,7 @@
                inset 16px 0px 52px rgba(14, 24, 80, 0.2);
       width: calc(100% - 320px);
       height: 100%;
-      background-color: white;
-      opacity: 0.8;
+      background-image: linear-gradient(255, 255, 255, 0.6);
    }
    &__icon {
       display: block;
@@ -41,7 +40,7 @@
       width: 8px;
       height: 40px;
       border-radius: 10px;
-      background: linear-gradient(to right, transparent 4px,#41F6D7 4px);
+      background: linear-gradient(to right, transparent 4px, $clickColor 4px);
       position: absolute;
       left: -20px;
       top: -4px;
@@ -56,9 +55,6 @@
    .feedback {
       &__content {
          width: 440px;
-      }
-      &__shadow {
-         width: calc(100% - 440px);
       }
       &__icon {
          position: absolute;
