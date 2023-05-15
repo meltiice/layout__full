@@ -1130,7 +1130,6 @@ template {
   display: none;
   position: fixed;
   z-index: 3;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   top: 0;
@@ -1190,9 +1189,11 @@ template {
 @media (min-width: 1120px) {
   .menu {
     display: flex;
+    width: 320px;
     box-shadow: none;
     background-color: transparent; }
     .menu__container {
+      display: block;
       box-shadow: none;
       margin-bottom: 80px; }
     .menu__content {
