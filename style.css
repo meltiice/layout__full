@@ -1134,12 +1134,7 @@ template {
   justify-content: space-between;
   top: 0;
   background-color: rgba(255, 255, 255, 0.7);
-  display: none;
-  /*&__open {
-      display: flex;
-      transition: transform 0.8s ease-in-out;
-      transform: translateX(320px);
-   }*/ }
+  display: none; }
   .menu__container {
     background-color: white;
     box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02), 16px 0 52px 0 rgba(14, 24, 80, 0.2);
@@ -1199,7 +1194,6 @@ template {
     .menu__content {
       margin-bottom: 80px; } }
 
-/*! SCREEN 1*/
 .screen1 {
   background-color: #F8F8F8;
   width: 100%;
