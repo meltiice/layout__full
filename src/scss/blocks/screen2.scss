@@ -17,6 +17,7 @@
          font-weight: 400;
          background: none;
          transition: 1s ease-out max-height;
+         
       }
       &__read-more::before {
          content: url("../img/expand.svg");

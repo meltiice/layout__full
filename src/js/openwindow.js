@@ -1,11 +1,9 @@
-//import { sharing } from "webpack";
-
 function openWindow (object){
-   window.addEventListener('click', e => { // при клике в любом месте окна браузера
-      let target = e.target // находим элемент, на котором был клик
+   window.addEventListener('click', e => {
+      let target = e.target 
       if (!target.closest(object.container) && target.closest(object.area)) 
-         { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-            object.areaQuery.classList.remove(object.openClass) // то закрываем окно навигации, удаляя активный класс
+         {
+            object.areaQuery.classList.remove(object.openClass);
          }
    })
    for (let button of object.open) {

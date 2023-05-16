@@ -8,25 +8,18 @@
    display: none;
    position: fixed;
    z-index: 3;
-   display: flex;
    flex-direction: column;
    justify-content: space-between;
    top: 0;
    background-color: rgba(255, 255, 255, 0.7);
    display: none;
-   //left: -320px;
-   //transform: translateX(-320px);
-   //transition: transform 2s ease-in-out;
-   //transition-duration: 0.8s;
-   //transition-property: transform;
-   //background-color: $bgColor;
+   
    &__container {
       background-color: white;
       box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02),
                16px 0 52px 0 rgba(14, 24, 80, 0.2);
       position: fixed;
       height: 100vh;
-      //display: flex;
       width: 320px;
       padding: 24px 24px 0 24px;
    }
@@ -76,19 +69,16 @@
       min-height: 50.81px;
       height: 50px;
    }
-   /*&__open {
-      display: flex;
-      transition: transform 0.8s ease-in-out;
-      transform: translateX(320px);
-   }*/
 }
 @media (min-width: 1120px)
 {
    .menu {
       display: flex;
+      width: 320px;
       box-shadow: none;
       background-color: transparent;
       &__container {
+         display: block;
          box-shadow: none;
          margin-bottom: 80px;
       }

@@ -1,4 +1,3 @@
-/*READMORE*/
 let readMore1 = {
    readMore: document.querySelector("#readmore-screen1"), 
    container: document.querySelector("#paragraf1"), 

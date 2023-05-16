@@ -16,15 +16,10 @@
    transition-property: box-shadow;
 }
 .icon:hover {
-   //box-shadow: 0 0 0 3px $buttonColor;
-   //transition-duration: 0.5s;
-   //transition-property: box-shadow;
    box-shadow: 0 0 0 2px $buttonColor;
    transition-duration: 0.3s;
 }
 .icon:active {
-   //background-color: $buttonActiveColor;
-   //box-shadow: 0 0 0 0px $buttonActiveColor;
    background-color: $buttonActiveColor;
    box-shadow: none;
 }
