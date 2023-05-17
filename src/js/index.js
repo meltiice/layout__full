@@ -20,14 +20,3 @@ var readMoreDevicesListener = readmore(readMore3);
 let menuListener = openWindow(menu);
 let feedbackRequestListener = openWindow(feedbackRequest);
 let feedbackCallListener = openWindow(feedbackCall);
-
-/* 
-if(window.innerWidth <= 768) {
-   swiper.enabled = true;
-}
-else {
-   swiper.enabled = false;
-   swiper.disable();
-   swiper.allowSlideNext = false;
-}
-console.log("Swiper done");*/
