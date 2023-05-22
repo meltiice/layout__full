@@ -22,7 +22,7 @@ let readMore3 = {
    count: 0, 
    innerStart: "Показать всё", 
    innerToggle: "Скрыть", 
-   classWidth: 'logos--read', 
+   classWidth: 'logos--read--second-swiper', 
    classRotate: 'read-more--rotate'
 }
 

@@ -1,6 +1,7 @@
 .header2 {
    padding: 16px;
-   background-color: $bgColor;
+   border-top: solid 1px $headerBorder;
+   background-image: linear-gradient(to right, $contentBgColor, $bgColor);
    &__subtitle {
       text-transform: uppercase;
       font-weight: 400;

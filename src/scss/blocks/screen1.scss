@@ -69,7 +69,7 @@
       margin-left: 16px;
       line-height: 18px;
       white-space: pre-line;
-      transition: max-height 1s ease-out;
+      transition: max-height 0.7s linear;
    }
    &__read-more {
       font-size: 14px;
@@ -87,14 +87,17 @@
       margin-right: 8px;
    }
    &--read {
-      max-height: 1000px;
-      transition: max-height 1s ease-in;
+      max-height: 558px;
+      transition: max-height 0.7s linear;
    }
 }
 
 
 @media (min-width:768px) {
    .screen1 {
+      &--read {
+         max-height: 420px;
+      }
       &__title-container::before {
          margin-right: 20px;
       }
@@ -153,7 +156,6 @@
       &__paragraf {
          margin-top: 16px;
          padding: 0;
-         transition-duration: 2s;
       }
       &__read-more {
          margin: 14px 0 0 0;
@@ -164,9 +166,7 @@
          margin-left: 36px;
       }
       &--read {
-         height: auto;
-         max-height: 1000px;
-         transition-duration: 3s;
+         max-height: 400px;
       }
    }
 

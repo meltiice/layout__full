@@ -12,11 +12,11 @@
       height: 24px;
       margin-right: 8px;
       transform: rotate(0deg);
-      transition-duration: 0.3s;
+      transition-duration: 1ms;
    }
    &--rotate::before {
       transform: rotate(180deg);
-      transition-duration: 0.3s;
+      transition-duration: 1ms;
    }
 }
 @media (min-width: 768px)

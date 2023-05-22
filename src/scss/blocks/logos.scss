@@ -76,7 +76,7 @@
       row-gap: 16px;
       column-gap: 24px;
       overflow: hidden;
-      transition: max-height 1s ease-out;
+      transition: max-height 0.7s linear;
       &__logo {
          margin: 0;
          width: calc(100% / 3 - 16px) !important;
@@ -86,14 +86,19 @@
          min-height: 0;
       }
       &--read {
-         max-height: 1000px;
-         transition: max-height 1s ease-in;
+         height: auto;
+         max-height: 360px;
+         transition: max-height 0.7s linear;
+      }
+      &--read--second-swiper {
+         max-height: 700px;
+         transition: max-height 0.9s linear;
       }
    }
 }
 @media (min-width:1120px) {
    .logos {
-      transition-duration: 0.8s;
+      transition-duration: 0.7s;
       &__logo {
       width: calc(100% / 4 - 18px) !important;
       }
